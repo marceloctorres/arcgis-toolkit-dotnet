@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ScaleLine
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ScaleLine
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine">
+  
+  
+  <h1 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine" class="text-break">Class ScaleLine
+  </h1>
+  <div class="markdown level0 summary"><p>The ScaleLine Control generates a line representing
+a certain distance on the map in both Metric and US units.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject">NSObject</a></div>
+    <div class="level2"><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiresponder">UIResponder</a></div>
+    <div class="level3"><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiview">UIView</a></div>
+    <div class="level4"><span class="xref">ScaleLine</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject">NSObject</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.insobjectprotocol">INSObjectProtocol</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuipasteconfigurationsupporting">IUIPasteConfigurationSupporting</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiuseractivityrestoring">IUIUserActivityRestoring</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.inscoding">INSCoding</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiaccessibilityidentification">IUIAccessibilityIdentification</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearance">IUIAppearance</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearancecontainer">IUIAppearanceContainer</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuicoordinatespace">IUICoordinateSpace</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuidynamicitem">IUIDynamicItem</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitem">IUIFocusItem</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusenvironment">IUIFocusEnvironment</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitemcontainer">IUIFocusItemContainer</a></div>
+    <div><span class="xref">UIKit.IUILargeContentViewerItem</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuitraitenvironment">IUITraitEnvironment</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/coreanimation.icalayerdelegate">ICALayerDelegate</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/objcruntime.inativeobject">INativeObject</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.icomponent">IComponent</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.html">Esri.ArcGISRuntime.Toolkit.UI.Controls</a></h6>
+  <h6><strong>Assembly</strong>: Esri.ArcGISRuntime.Toolkit.dll</h6>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Register(&quot;ScaleLine&quot;)]
+public class ScaleLine : UIView, IEquatable&lt;NSObject&gt;, INSObjectProtocol, IUIPasteConfigurationSupporting, IUIUserActivityRestoring, IEnumerable, INSCoding, IUIAccessibilityIdentification, IUIAppearance, IUIAppearanceContainer, IUICoordinateSpace, IUIDynamicItem, IUIFocusItem, IUIFocusEnvironment, IUIFocusItemContainer, IUILargeContentViewerItem, IUITraitEnvironment, ICALayerDelegate, INativeObject, IComponent, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine__ctor.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/ScaleLine/ScaleLine.cs/#L57">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine__ctor_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.#ctor*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine__ctor" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.#ctor">ScaleLine()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.html">ScaleLine</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScaleLine()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_ForegroundColor.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.ForegroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/ScaleLine/ScaleLine.iOS.cs/#L231">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_ForegroundColor_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.ForegroundColor*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_ForegroundColor" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.ForegroundColor">ForegroundColor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the color of the foreground elements of the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.html">ScaleLine</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIColor ForegroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uicolor">UIColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_IntrinsicContentSize.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.IntrinsicContentSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/ScaleLine/ScaleLine.iOS.cs/#L259">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_IntrinsicContentSize_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.IntrinsicContentSize*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_IntrinsicContentSize" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.IntrinsicContentSize">IntrinsicContentSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override CGSize IntrinsicContentSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/coregraphics.cgsize">CGSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiview.intrinsiccontentsize#UIKit_UIView_IntrinsicContentSize">UIView.IntrinsicContentSize</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_MapScale.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.MapScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/ScaleLine/ScaleLine.cs/#L74">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_MapScale_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.MapScale*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_MapScale" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.MapScale">MapScale</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the scale that the ScaleLine will
+use to calculate scale in metric and imperial units.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MapScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_MapScale_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.html#Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_MapView">MapView</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_MapView.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.MapView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/ScaleLine/ScaleLine.Xamarin.cs/#L64">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_MapView_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.MapView*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_MapView" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.MapView">MapView</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the MapView for which the scale is displayed. This will accurately reflect the scale at the center of the MapView</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapView MapView { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MapView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_TargetWidth.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.TargetWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/ScaleLine/ScaleLine.cs/#L84">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_TargetWidth_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.TargetWidth*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_TargetWidth" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.TargetWidth">TargetWidth</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the width that will be used to
+calculate the length of the ScaleLine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TargetWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_AwakeFromNib.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.AwakeFromNib%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/ScaleLine/ScaleLine.iOS.cs/#L50">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_AwakeFromNib_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.AwakeFromNib*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_AwakeFromNib" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.AwakeFromNib">AwakeFromNib()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AwakeFromNib()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject.awakefromnib#Foundation_NSObject_AwakeFromNib">NSObject.AwakeFromNib()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_CalculateScale_Esri_ArcGISRuntime_Geometry_Polygon_System_Double_.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.CalculateScale(Esri.ArcGISRuntime.Geometry.Polygon%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/ScaleLine/ScaleLine.cs/#L254">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_CalculateScale_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.CalculateScale*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_CalculateScale_Esri_ArcGISRuntime_Geometry_Polygon_System_Double_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.CalculateScale(Esri.ArcGISRuntime.Geometry.Polygon,System.Double)">CalculateScale(Geometry.Polygon, Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the scale at the center of a polygon, at a given pixel size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateScale(Geometry.Polygon visibleArea, double unitsPerPixel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Esri.ArcGISRuntime.Geometry.Polygon</span></td>
+        <td><span class="parametername">visibleArea</span></td>
+        <td><p>The area which center the scale will be calculated for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">unitsPerPixel</span></td>
+        <td><p>The size of a device indepedent pixel in the units of the spatial reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The MapScale for the center of the view</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_CalculateScale_Esri_ArcGISRuntime_Geometry_Polygon_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A pixel is a device independent logical pixel - ie 1/96 inches.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_InvalidateIntrinsicContentSize.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.InvalidateIntrinsicContentSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/ScaleLine/ScaleLine.iOS.cs/#L220">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_InvalidateIntrinsicContentSize_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.InvalidateIntrinsicContentSize*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_InvalidateIntrinsicContentSize" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.InvalidateIntrinsicContentSize">InvalidateIntrinsicContentSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InvalidateIntrinsicContentSize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiview.invalidateintrinsiccontentsize#UIKit_UIView_InvalidateIntrinsicContentSize">UIView.InvalidateIntrinsicContentSize()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_SizeThatFits_CoreGraphics_CGSize_.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.SizeThatFits(CoreGraphics.CGSize)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/ScaleLine/ScaleLine.iOS.cs/#L274">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_SizeThatFits_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.SizeThatFits*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_SizeThatFits_CoreGraphics_CGSize_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.SizeThatFits(CoreGraphics.CGSize)">SizeThatFits(CGSize)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override CGSize SizeThatFits(CGSize size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/coregraphics.cgsize">CGSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/coregraphics.cgsize">CGSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiview.sizethatfits#UIKit_UIView_SizeThatFits_CoreGraphics_CGSize_">UIView.SizeThatFits(CGSize)</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_System_ComponentModel_IComponent_Disposed.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.System%23ComponentModel%23IComponent%23Disposed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/ScaleLine/ScaleLine.iOS.cs/#L289">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_System_ComponentModel_IComponent_Disposed" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.System#ComponentModel#IComponent#Disposed">IComponent.Disposed</h4>
+  <div class="markdown level1 summary"><p>Internal use only</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler IComponent.Disposed</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_System_ComponentModel_IComponent_Site.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.System%23ComponentModel%23IComponent%23Site%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/ScaleLine/ScaleLine.iOS.cs/#L282">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_System_ComponentModel_IComponent_Site_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.System#ComponentModel#IComponent#Site*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine_System_ComponentModel_IComponent_Site" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine.System#ComponentModel#IComponent#Site">IComponent.Site</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISite IComponent.Site { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.isite">ISite</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.insobjectprotocol">Foundation.INSObjectProtocol</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuipasteconfigurationsupporting">UIKit.IUIPasteConfigurationSupporting</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiuseractivityrestoring">UIKit.IUIUserActivityRestoring</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.inscoding">Foundation.INSCoding</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiaccessibilityidentification">UIKit.IUIAccessibilityIdentification</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearance">UIKit.IUIAppearance</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearancecontainer">UIKit.IUIAppearanceContainer</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuicoordinatespace">UIKit.IUICoordinateSpace</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuidynamicitem">UIKit.IUIDynamicItem</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitem">UIKit.IUIFocusItem</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusenvironment">UIKit.IUIFocusEnvironment</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitemcontainer">UIKit.IUIFocusItemContainer</a>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUILargeContentViewerItem</span>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuitraitenvironment">UIKit.IUITraitEnvironment</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/coreanimation.icalayerdelegate">CoreAnimation.ICALayerDelegate</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/objcruntime.inativeobject">ObjCRuntime.INativeObject</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.icomponent">System.ComponentModel.IComponent</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_ScaleLine.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.ScaleLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/ScaleLine/ScaleLine.iOS.designer.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

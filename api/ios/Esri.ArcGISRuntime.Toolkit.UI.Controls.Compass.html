@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Compass
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Compass
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass">
+  
+  
+  <h1 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass" class="text-break">Class Compass
+  </h1>
+  <div class="markdown level0 summary"><p>The Compass Control showing the heading on the map when the rotation is not North up / 0.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject">NSObject</a></div>
+    <div class="level2"><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiresponder">UIResponder</a></div>
+    <div class="level3"><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiview">UIView</a></div>
+    <div class="level4"><span class="xref">Compass</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject">NSObject</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.insobjectprotocol">INSObjectProtocol</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuipasteconfigurationsupporting">IUIPasteConfigurationSupporting</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiuseractivityrestoring">IUIUserActivityRestoring</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.inscoding">INSCoding</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiaccessibilityidentification">IUIAccessibilityIdentification</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearance">IUIAppearance</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearancecontainer">IUIAppearanceContainer</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuicoordinatespace">IUICoordinateSpace</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuidynamicitem">IUIDynamicItem</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitem">IUIFocusItem</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusenvironment">IUIFocusEnvironment</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitemcontainer">IUIFocusItemContainer</a></div>
+    <div><span class="xref">UIKit.IUILargeContentViewerItem</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuitraitenvironment">IUITraitEnvironment</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/coreanimation.icalayerdelegate">ICALayerDelegate</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/objcruntime.inativeobject">INativeObject</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.icomponent">IComponent</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.html">Esri.ArcGISRuntime.Toolkit.UI.Controls</a></h6>
+  <h6><strong>Assembly</strong>: Esri.ArcGISRuntime.Toolkit.dll</h6>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Register(&quot;Compass&quot;)]
+public class Compass : UIView, IEquatable&lt;NSObject&gt;, INSObjectProtocol, IUIPasteConfigurationSupporting, IUIUserActivityRestoring, IEnumerable, INSCoding, IUIAccessibilityIdentification, IUIAppearance, IUIAppearanceContainer, IUICoordinateSpace, IUIDynamicItem, IUIFocusItem, IUIFocusEnvironment, IUIFocusItemContainer, IUILargeContentViewerItem, IUITraitEnvironment, ICALayerDelegate, INativeObject, INotifyPropertyChanged, IComponent, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass__ctor.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/Compass/Compass.cs/#L44">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass__ctor_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.#ctor*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass__ctor" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.#ctor">Compass()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.html">Compass</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Compass()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass__ctor_CoreGraphics_CGRect_.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.%23ctor(CoreGraphics.CGRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/Compass/Compass.iOS.cs/#L44">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass__ctor_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.#ctor*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass__ctor_CoreGraphics_CGRect_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.#ctor(CoreGraphics.CGRect)">Compass(CGRect)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.html">Compass</a> class with the specified frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Compass(CGRect frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/coregraphics.cgrect">CGRect</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td><p>Frame used by the view, expressed in iOS points.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_AutoHide.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.AutoHide%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/Compass/Compass.cs/#L66">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_AutoHide_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.AutoHide*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_AutoHide" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.AutoHide">AutoHide</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to auto-hide the control when Heading is 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoHide { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_GeoView.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.GeoView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/Compass/Compass.Xamarin.cs/#L67">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_GeoView_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.GeoView*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_GeoView" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.GeoView">GeoView</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the GeoView for which the heading is displayed. This will accurately reflect the heading at the center of the GeoView</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoView GeoView { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GeoView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_GeoView_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.html#Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_Heading">Heading</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_Heading.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.Heading%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/Compass/Compass.cs/#L57">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_Heading_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.Heading*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_Heading" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.Heading">Heading</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Heading for the compass.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Heading { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_Heading_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is read-only if the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.html#Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_GeoView">GeoView</a> property is assigned.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_AwakeFromNib.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.AwakeFromNib%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/Compass/Compass.iOS.cs/#L51">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_AwakeFromNib_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.AwakeFromNib*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_AwakeFromNib" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.AwakeFromNib">AwakeFromNib()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AwakeFromNib()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject.awakefromnib#Foundation_NSObject_AwakeFromNib">NSObject.AwakeFromNib()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_Draw_CoreGraphics_CGRect_.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.Draw(CoreGraphics.CGRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/Compass/Compass.iOS.cs/#L81">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_Draw_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.Draw*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_Draw_CoreGraphics_CGRect_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.Draw(CoreGraphics.CGRect)">Draw(CGRect)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(CGRect rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/coregraphics.cgrect">CGRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiview.draw#UIKit_UIView_Draw_CoreGraphics_CGRect_">UIView.Draw(CGRect)</a></div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_PropertyChanged.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.PropertyChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/Compass/Compass.Xamarin.cs/#L85">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_PropertyChanged" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.PropertyChanged">PropertyChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PropertyChangedEventHandler PropertyChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_System_ComponentModel_IComponent_Disposed.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.System%23ComponentModel%23IComponent%23Disposed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/Compass/Compass.iOS.cs/#L156">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_System_ComponentModel_IComponent_Disposed" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.System#ComponentModel#IComponent#Disposed">IComponent.Disposed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler IComponent.Disposed</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_System_ComponentModel_IComponent_Site.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.System%23ComponentModel%23IComponent%23Site%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/Compass/Compass.iOS.cs/#L151">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_System_ComponentModel_IComponent_Site_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.System#ComponentModel#IComponent#Site*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass_System_ComponentModel_IComponent_Site" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass.System#ComponentModel#IComponent#Site">IComponent.Site</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISite IComponent.Site { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.isite">ISite</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.insobjectprotocol">Foundation.INSObjectProtocol</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuipasteconfigurationsupporting">UIKit.IUIPasteConfigurationSupporting</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiuseractivityrestoring">UIKit.IUIUserActivityRestoring</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.inscoding">Foundation.INSCoding</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiaccessibilityidentification">UIKit.IUIAccessibilityIdentification</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearance">UIKit.IUIAppearance</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearancecontainer">UIKit.IUIAppearanceContainer</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuicoordinatespace">UIKit.IUICoordinateSpace</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuidynamicitem">UIKit.IUIDynamicItem</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitem">UIKit.IUIFocusItem</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusenvironment">UIKit.IUIFocusEnvironment</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitemcontainer">UIKit.IUIFocusItemContainer</a>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUILargeContentViewerItem</span>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuitraitenvironment">UIKit.IUITraitEnvironment</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/coreanimation.icalayerdelegate">CoreAnimation.ICALayerDelegate</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/objcruntime.inativeobject">ObjCRuntime.INativeObject</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">System.ComponentModel.INotifyPropertyChanged</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.icomponent">System.ComponentModel.IComponent</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_Compass.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.Compass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/Compass/Compass.iOS.designer.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SymbolDisplay
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SymbolDisplay
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay">
+  
+  
+  <h1 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay" class="text-break">Class SymbolDisplay
+  </h1>
+  <div class="markdown level0 summary"><p>A control that renders a <see cref="!:Esri.ArcGISRuntime.Symbology.Symbol"></see>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject">NSObject</a></div>
+    <div class="level2"><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiresponder">UIResponder</a></div>
+    <div class="level3"><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiview">UIView</a></div>
+    <div class="level4"><span class="xref">SymbolDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject">NSObject</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.insobjectprotocol">INSObjectProtocol</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuipasteconfigurationsupporting">IUIPasteConfigurationSupporting</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiuseractivityrestoring">IUIUserActivityRestoring</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.inscoding">INSCoding</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiaccessibilityidentification">IUIAccessibilityIdentification</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearance">IUIAppearance</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearancecontainer">IUIAppearanceContainer</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuicoordinatespace">IUICoordinateSpace</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuidynamicitem">IUIDynamicItem</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitem">IUIFocusItem</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusenvironment">IUIFocusEnvironment</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitemcontainer">IUIFocusItemContainer</a></div>
+    <div><span class="xref">UIKit.IUILargeContentViewerItem</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuitraitenvironment">IUITraitEnvironment</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/coreanimation.icalayerdelegate">ICALayerDelegate</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/objcruntime.inativeobject">INativeObject</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.icomponent">IComponent</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.html">Esri.ArcGISRuntime.Toolkit.UI.Controls</a></h6>
+  <h6><strong>Assembly</strong>: Esri.ArcGISRuntime.Toolkit.dll</h6>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Register(&quot;SymbolDisplay&quot;)]
+public class SymbolDisplay : UIView, IEquatable&lt;NSObject&gt;, INSObjectProtocol, IUIPasteConfigurationSupporting, IUIUserActivityRestoring, IEnumerable, INSCoding, IUIAccessibilityIdentification, IUIAppearance, IUIAppearanceContainer, IUICoordinateSpace, IUIDynamicItem, IUIFocusItem, IUIFocusEnvironment, IUIFocusItemContainer, IUILargeContentViewerItem, IUITraitEnvironment, ICALayerDelegate, INativeObject, IComponent, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay__ctor.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/SymbolDisplay/SymbolDisplay.cs/#L44">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay__ctor_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.#ctor*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay__ctor" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.#ctor">SymbolDisplay()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.html">SymbolDisplay</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplay()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_IntrinsicContentSize.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.IntrinsicContentSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/SymbolDisplay/SymbolDisplay.iOS.cs/#L113">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_IntrinsicContentSize_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.IntrinsicContentSize*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_IntrinsicContentSize" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.IntrinsicContentSize">IntrinsicContentSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override CGSize IntrinsicContentSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/coregraphics.cgsize">CGSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiview.intrinsiccontentsize#UIKit_UIView_IntrinsicContentSize">UIView.IntrinsicContentSize</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_Symbol.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.Symbol%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/SymbolDisplay/SymbolDisplay.cs/#L50">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_Symbol_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.Symbol*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_Symbol" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.Symbol">Symbol</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the symbol to render</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Symbology.Symbol Symbol { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Symbology.Symbol</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_AwakeFromNib.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.AwakeFromNib%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/SymbolDisplay/SymbolDisplay.iOS.cs/#L48">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_AwakeFromNib_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.AwakeFromNib*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_AwakeFromNib" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.AwakeFromNib">AwakeFromNib()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AwakeFromNib()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject.awakefromnib#Foundation_NSObject_AwakeFromNib">NSObject.AwakeFromNib()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_SizeThatFits_CoreGraphics_CGSize_.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.SizeThatFits(CoreGraphics.CGSize)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/SymbolDisplay/SymbolDisplay.iOS.cs/#L116">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_SizeThatFits_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.SizeThatFits*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_SizeThatFits_CoreGraphics_CGSize_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.SizeThatFits(CoreGraphics.CGSize)">SizeThatFits(CGSize)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override CGSize SizeThatFits(CGSize size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/coregraphics.cgsize">CGSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/coregraphics.cgsize">CGSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiview.sizethatfits#UIKit_UIView_SizeThatFits_CoreGraphics_CGSize_">UIView.SizeThatFits(CGSize)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_UpdateConstraints.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.UpdateConstraints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/SymbolDisplay/SymbolDisplay.iOS.cs/#L100">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_UpdateConstraints_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.UpdateConstraints*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_UpdateConstraints" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.UpdateConstraints">UpdateConstraints()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateConstraints()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiview.updateconstraints#UIKit_UIView_UpdateConstraints">UIView.UpdateConstraints()</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_System_ComponentModel_IComponent_Disposed.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.System%23ComponentModel%23IComponent%23Disposed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/SymbolDisplay/SymbolDisplay.iOS.cs/#L131">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_System_ComponentModel_IComponent_Disposed" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.System#ComponentModel#IComponent#Disposed">IComponent.Disposed</h4>
+  <div class="markdown level1 summary"><p>Internal use only</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler IComponent.Disposed</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_System_ComponentModel_IComponent_Site.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.System%23ComponentModel%23IComponent%23Site%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/SymbolDisplay/SymbolDisplay.iOS.cs/#L124">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_System_ComponentModel_IComponent_Site_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.System#ComponentModel#IComponent#Site*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay_System_ComponentModel_IComponent_Site" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay.System#ComponentModel#IComponent#Site">IComponent.Site</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISite IComponent.Site { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.isite">ISite</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.insobjectprotocol">Foundation.INSObjectProtocol</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuipasteconfigurationsupporting">UIKit.IUIPasteConfigurationSupporting</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiuseractivityrestoring">UIKit.IUIUserActivityRestoring</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.inscoding">Foundation.INSCoding</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiaccessibilityidentification">UIKit.IUIAccessibilityIdentification</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearance">UIKit.IUIAppearance</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearancecontainer">UIKit.IUIAppearanceContainer</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuicoordinatespace">UIKit.IUICoordinateSpace</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuidynamicitem">UIKit.IUIDynamicItem</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitem">UIKit.IUIFocusItem</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusenvironment">UIKit.IUIFocusEnvironment</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusitemcontainer">UIKit.IUIFocusItemContainer</a>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUILargeContentViewerItem</span>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuitraitenvironment">UIKit.IUITraitEnvironment</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/coreanimation.icalayerdelegate">CoreAnimation.ICALayerDelegate</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/objcruntime.inativeobject">ObjCRuntime.INativeObject</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.icomponent">System.ComponentModel.IComponent</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_SymbolDisplay.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.SymbolDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/SymbolDisplay/SymbolDisplay.iOS.designer.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

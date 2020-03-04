@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BookmarksView
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BookmarksView
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView">
+  
+  
+  <h1 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView" class="text-break">Class BookmarksView
+  </h1>
+  <div class="markdown level0 summary"><p>The BookmarksView view presents bookmarks, either from a list defined by <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.html#Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_BookmarksOverride">BookmarksOverride</a> or
+the Map or Scene shown in the associated <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.html#Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_GeoView">GeoView</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject">NSObject</a></div>
+    <div class="level2"><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiresponder">UIResponder</a></div>
+    <div class="level3"><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiviewcontroller">UIViewController</a></div>
+    <div class="level4"><span class="xref">BookmarksView</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.nsobject">NSObject</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.insobjectprotocol">INSObjectProtocol</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuipasteconfigurationsupporting">IUIPasteConfigurationSupporting</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiuseractivityrestoring">IUIUserActivityRestoring</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.inscoding">INSCoding</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.insextensionrequesthandling">INSExtensionRequestHandling</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearancecontainer">IUIAppearanceContainer</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuicontentcontainer">IUIContentContainer</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusenvironment">IUIFocusEnvironment</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuitraitenvironment">IUITraitEnvironment</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/objcruntime.inativeobject">INativeObject</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.html">Esri.ArcGISRuntime.Toolkit.UI.Controls</a></h6>
+  <h6><strong>Assembly</strong>: Esri.ArcGISRuntime.Toolkit.dll</h6>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BookmarksView : UIViewController, IEquatable&lt;NSObject&gt;, INSObjectProtocol, IUIPasteConfigurationSupporting, IUIUserActivityRestoring, IEnumerable, INSCoding, INSExtensionRequestHandling, IUIAppearanceContainer, IUIContentContainer, IUIFocusEnvironment, IUITraitEnvironment, INativeObject, IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_BookmarksOverride.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.BookmarksOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/BookmarksView/BookmarksView.cs/#L49">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_BookmarksOverride_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.BookmarksOverride*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_BookmarksOverride" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.BookmarksOverride">BookmarksOverride</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the list of bookmarks to display.
+Otherwise, the bookmarks from the Map or Scene shown in the associated <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.html#Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_GeoView">GeoView</a> are displayed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Bookmark&gt; BookmarksOverride { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Bookmark</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_BookmarksOverride_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If set to a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.specialized.inotifycollectionchanged">INotifyCollectionChanged</a>, the view will be updated with collection changes.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_GeoView.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.GeoView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/BookmarksView/BookmarksView.cs/#L62">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_GeoView_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.GeoView*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_GeoView" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.GeoView">GeoView</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the MapView or SceneView associated with this view. When a bookmark is selected, the viewpoint of this
+geoview will be set to the bookmark's viewpoint. By default, bookmarks from the geoview's Map or Scene
+property will be shown. To show a custom bookmark list, set <a class="xref" href="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.html#Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_BookmarksOverride">BookmarksOverride</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoView GeoView { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GeoView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_LoadView.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.LoadView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/BookmarksView/BookmarksView.iOS.cs/#L32">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_LoadView_" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.LoadView*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_LoadView" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.LoadView">LoadView()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadView()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.uiviewcontroller.loadview#UIKit_UIViewController_LoadView">UIViewController.LoadView()</a></div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_BookmarkSelected.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.BookmarkSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit/UI/Controls/BookmarksView/BookmarksView.cs/#L83">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView_BookmarkSelected" data-uid="Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView.BookmarkSelected">BookmarkSelected</h4>
+  <div class="markdown level1 summary"><p>Event raised when the user selects a bookmark.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Bookmark&gt; BookmarkSelected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<span class="xref">Bookmark</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.insobjectprotocol">Foundation.INSObjectProtocol</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuipasteconfigurationsupporting">UIKit.IUIPasteConfigurationSupporting</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiuseractivityrestoring">UIKit.IUIUserActivityRestoring</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.inscoding">Foundation.INSCoding</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/foundation.insextensionrequesthandling">Foundation.INSExtensionRequestHandling</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuiappearancecontainer">UIKit.IUIAppearanceContainer</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuicontentcontainer">UIKit.IUIContentContainer</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuifocusenvironment">UIKit.IUIFocusEnvironment</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/uikit.iuitraitenvironment">UIKit.IUITraitEnvironment</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/objcruntime.inativeobject">ObjCRuntime.INativeObject</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_UI_Controls_BookmarksView.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.UI.Controls.BookmarksView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit/Toolkit.iOS/UI/Controls/BookmarksView/BookmarksView.iOS.cs/#L24" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

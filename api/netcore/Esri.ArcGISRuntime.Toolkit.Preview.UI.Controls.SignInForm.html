@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SignInForm
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SignInForm
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm">
+  
+  
+  <h1 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm" class="text-break">Class SignInForm
+  </h1>
+  <div class="markdown level0 summary"><p>A Sign-in form for generating either an ArcGIS Token Credential or a Network Credential.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject">DispatcherObject</a></div>
+    <div class="level2"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.dependencyobject">DependencyObject</a></div>
+    <div class="level3"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.media.visual">Visual</a></div>
+    <div class="level4"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.uielement">UIElement</a></div>
+    <div class="level5"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.frameworkelement">FrameworkElement</a></div>
+    <div class="level6"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.controls.control">Control</a></div>
+    <div class="level7"><span class="xref">SignInForm</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.media.animation.ianimatable">IAnimatable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.isupportinitialize">ISupportInitialize</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.iframeworkinputelement">IFrameworkInputElement</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.iinputelement">IInputElement</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.markup.iqueryambient">IQueryAmbient</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.html">Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls</a></h6>
+  <h6><strong>Assembly</strong>: Esri.ArcGISRuntime.Toolkit.Preview.dll</h6>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SignInForm : Control, IAnimatable, ISupportInitialize, IFrameworkInputElement, IInputElement, IQueryAmbient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm__ctor.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L42">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm__ctor_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.#ctor*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm__ctor" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.#ctor">SignInForm()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.html">SignInForm</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignInForm()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CancelButtonTextProperty.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.CancelButtonTextProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L327">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CancelButtonTextProperty" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.CancelButtonTextProperty">CancelButtonTextProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.html#Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CancelButtonText">CancelButtonText</a> dependency property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty CancelButtonTextProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.dependencyproperty">DependencyProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_EnableCredentialCacheProperty.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.EnableCredentialCacheProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L287">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_EnableCredentialCacheProperty" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.EnableCredentialCacheProperty">EnableCredentialCacheProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.html#Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_EnableCredentialCache">EnableCredentialCache</a> dependency property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty EnableCredentialCacheProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.dependencyproperty">DependencyProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_HeaderTextProperty.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.HeaderTextProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L357">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_HeaderTextProperty" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.HeaderTextProperty">HeaderTextProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.html#Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_HeaderText">HeaderText</a> dependency property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty HeaderTextProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.dependencyproperty">DependencyProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_MessageTextProperty.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.MessageTextProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L228">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_MessageTextProperty" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.MessageTextProperty">MessageTextProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.html#Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_MessageText">MessageText</a> dependency property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty MessageTextProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.dependencyproperty">DependencyProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_OkButtonTextProperty.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.OkButtonTextProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L312">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_OkButtonTextProperty" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.OkButtonTextProperty">OkButtonTextProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.html#Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_OkButtonText">OkButtonText</a> dependency property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty OkButtonTextProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.dependencyproperty">DependencyProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_RememberCredentialsTextProperty.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.RememberCredentialsTextProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L342">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_RememberCredentialsTextProperty" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.RememberCredentialsTextProperty">RememberCredentialsTextProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.html#Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_RememberCredentialsText">RememberCredentialsText</a> dependency property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty RememberCredentialsTextProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.dependencyproperty">DependencyProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_ServerHostProperty.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.ServerHostProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L214">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_ServerHostProperty" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.ServerHostProperty">ServerHostProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.html#Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_ServerHost">ServerHost</a> dependency property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ServerHostProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.dependencyproperty">DependencyProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CancelButtonText.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.CancelButtonText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L318">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CancelButtonText_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.CancelButtonText*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CancelButtonText" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.CancelButtonText">CancelButtonText</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the text displayed in the Cancel button</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CancelButtonText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_Credential.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.Credential%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L177">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_Credential_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.Credential*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_Credential" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.Credential">Credential</h4>
+  <div class="markdown level1 summary"><p>Gets the credential generated by the dialog</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Credential Credential { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Credential</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CredentialRequestInfo.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.CredentialRequestInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L234">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CredentialRequestInfo_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.CredentialRequestInfo*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CredentialRequestInfo" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.CredentialRequestInfo">CredentialRequestInfo</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the credential info used to generated a credential from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CredentialRequestInfo CredentialRequestInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CredentialRequestInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_EnableCredentialCache.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.EnableCredentialCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L278">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_EnableCredentialCache_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.EnableCredentialCache*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_EnableCredentialCache" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.EnableCredentialCache">EnableCredentialCache</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the user is presented with an option to
+cache the entered credential to the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.Authentication.CredentialsCache.html">CredentialsCache</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableCredentialCache { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_EnableCredentialCache_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.Authentication.CredentialsCache.html">CredentialsCache</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_HeaderText.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.HeaderText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L348">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_HeaderText_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.HeaderText*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_HeaderText" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.HeaderText">HeaderText</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the header text</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HeaderText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_MessageText.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.MessageText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L219">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_MessageText_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.MessageText*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_MessageText" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.MessageText">MessageText</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the message displayed to the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MessageText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_OkButtonText.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.OkButtonText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L303">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_OkButtonText_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.OkButtonText*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_OkButtonText" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.OkButtonText">OkButtonText</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the text displayed in the OK button</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OkButtonText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_RememberCredentialsText.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.RememberCredentialsText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L333">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_RememberCredentialsText_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.RememberCredentialsText*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_RememberCredentialsText" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.RememberCredentialsText">RememberCredentialsText</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the text displayed in the remember credentials checkbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RememberCredentialsText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_ServerHost.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.ServerHost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L203">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_ServerHost_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.ServerHost*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_ServerHost" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.ServerHost">ServerHost</h4>
+  <div class="markdown level1 summary"><p>Gets the URI of the server a credential is currently being created for.
+This value is extracted from the value of the <a class="xref" href="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.html#Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CredentialRequestInfo">CredentialRequestInfo</a>
+and the <see cref="!:AuthenticationManager"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri ServerHost { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_OnApplyTemplate.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.OnApplyTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L48">View Source</a>
+  </span>
+  <a id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_OnApplyTemplate_" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.OnApplyTemplate*"></a>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_OnApplyTemplate" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.OnApplyTemplate">OnApplyTemplate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnApplyTemplate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.frameworkelement.onapplytemplate#System_Windows_FrameworkElement_OnApplyTemplate">FrameworkElement.OnApplyTemplate()</a></div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_Cancelled.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.Cancelled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L162">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_Cancelled" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.Cancelled">Cancelled</h4>
+  <div class="markdown level1 summary"><p>Raised when the cancel button is pressed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Cancelled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_Completed.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.Completed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L167">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_Completed" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.Completed">Completed</h4>
+  <div class="markdown level1 summary"><p>Raised when a credential has successfully been created</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Credential&gt; Completed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<span class="xref">Credential</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CreateCredentialError.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.CreateCredentialError%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L172">View Source</a>
+  </span>
+  <h4 id="Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm_CreateCredentialError" data-uid="Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm.CreateCredentialError">CreateCredentialError</h4>
+  <div class="markdown level1 summary"><p>Raised it the form failed to generate a credential from the supplied username and password</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Exception&gt; CreateCredentialError</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.media.animation.ianimatable">System.Windows.Media.Animation.IAnimatable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.isupportinitialize">System.ComponentModel.ISupportInitialize</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.iframeworkinputelement">System.Windows.IFrameworkInputElement</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.iinputelement">System.Windows.IInputElement</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.markup.iqueryambient">System.Windows.Markup.IQueryAmbient</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="http://github.com/esri/arcgis-toolkit-dotnet//new/master/docs/apidoc/new?filename=Esri_ArcGISRuntime_Toolkit_Preview_UI_Controls_SignInForm.md&amp;value=---%0Auid%3A%20Esri.ArcGISRuntime.Toolkit.Preview.UI.Controls.SignInForm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="http://github.com/esri/arcgis-toolkit-dotnet//blob/master/src/Toolkit.Preview/Toolkit.Preview.WPF/UI/Controls/SignInForm/SignInForm.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
